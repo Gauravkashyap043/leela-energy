@@ -68,6 +68,16 @@ const Home = () => {
       location: "Delhi",
       text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
     },
+    {
+      name: "Gaurav Kumar",
+      location: "Delhi",
+      text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
+    },
+    {
+      name: "Rajan Kumar",
+      location: "Delhi",
+      text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
+    },
   ];
 
   return (
