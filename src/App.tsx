@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navbar from "./layouts/Navbar";
 import "./App.css";
+import ProjectDetails from "./pages/ProjectDetails";
+import ProjectsPage from "./pages/ProjectsPage";
 function App() {
   return (
     <Router>
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:projectId" element={<ProjectDetails />} />
       </Routes>
     </Router>
   );
