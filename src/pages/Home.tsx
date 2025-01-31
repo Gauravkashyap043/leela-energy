@@ -137,7 +137,7 @@ const Home = () => {
       </div>
       {/* Why Solar Section */}
 
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
             Why Switch to Solar?
@@ -162,7 +162,7 @@ const Home = () => {
 
       {/* Our Solar Project */}
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Our Solar Projects</h2>
 
@@ -209,7 +209,7 @@ const Home = () => {
       </section>
 
       {/* Installation Process */}
-      <section className="bg-gray-100 py-16 px-4">
+      <section className="bg-gray-50 py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
             4-Step Installation Process
@@ -280,7 +280,7 @@ const Home = () => {
         </div>
       </section>
       {/* Customer Reviews */}
-      <section className="bg-gray-100 py-16 px-4">
+      <section className="bg-gray-50 py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
             What Our Customers Say

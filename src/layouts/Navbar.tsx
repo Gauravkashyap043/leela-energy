@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../assets/leela complete logo.png"
-import { Link } from "react-router-dom";
+import logo from "../assets/leela complete logo.png";
+import { Link, NavLink } from "react-router-dom";
+
 const Navbar: React.FC = () => {
   return (
     <nav className="bg-white shadow-lg">
@@ -16,12 +17,34 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
           <div className="flex space-x-4">
-            <Link to="/" className="text-gray-600 hover:text-green-600">
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                `text-gray-600 hover:text-green-600 ${isActive ? 'text-green-600 font-semibold' : ''
+                }`
+              }
+            >
               Home
-            </Link>
-            <Link to="/contact" className="text-gray-600 hover:text-green-600">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `text-gray-600 hover:text-green-600 ${isActive ? 'text-green-600 font-semibold' : ''
+                }`
+              }
+            >
               Contact
-            </Link>
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                `text-gray-600 hover:text-green-600 ${isActive ? 'text-green-600 font-semibold' : ''
+                }`
+              }
+            >
+              Projects
+            </NavLink>
           </div>
         </div>
       </div>
