@@ -1,0 +1,13 @@
+.home-page-hero-section {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-image: linear-gradient(
+    180deg,
+    #77bf58,
+    rgba(119, 191, 87, 0.51) 61%,
+    rgba(119, 191, 87, 0)
+  );
+}
