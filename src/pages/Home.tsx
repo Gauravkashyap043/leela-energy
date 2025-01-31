@@ -159,16 +159,16 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12">
             4-Step Installation Process
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex gap-12 items-center">
             <div>
               <ProcessTimeline steps={processSteps} />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block flex-1 h-full">
               <img
                 // effect="blur"
                 src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                 alt="Solar installation process"
-                className="rounded-lg shadow-xl w-full h-96 object-cover"
+                className="rounded-lg shadow-xl w-full h-[30rem]"
               />
             </div>
           </div>
