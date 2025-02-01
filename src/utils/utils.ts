@@ -50,3 +50,43 @@ export const projects: Project[] = [
         savings: '95% reduction in electricity bills'
     },
 ];
+
+export const reviews = [
+    {
+        name: "Rahul Sharma",
+        location: "Meerut U.P",
+        text: "Leela Energy made our transition to solar seamless. Our energy bills have dropped by 80% and the installation team was professional.",
+    },
+    {
+        name: "Priya Patel",
+        location: "Ghaziabad U.P",
+        text: "Excellent service from start to finish. The financing options made it affordable, and we're already seeing significant savings.",
+    },
+    {
+        name: "Anil Kumar",
+        location: "Lucknow U.P",
+        text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
+    },
+    {
+        name: "Gaurav Kumar",
+        location: "Delhi",
+        text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
+    },
+    {
+        name: "Rajan Kumar",
+        location: "Delhi",
+        text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
+    },
+    {
+        name: "Gaurav Kashyap",
+        location: "Kanput U.P",
+        text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
+    },
+];
+
+export const processSteps = [
+    { title: "Free Quote", text: "Get customized solar plan" },
+    { title: "Expert Consultation", text: "Site visit & system design" },
+    { title: "Choose System", text: "Select perfect package" },
+    { title: "Install & Save", text: "Quick installation & savings" },
+];

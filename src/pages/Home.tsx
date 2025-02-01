@@ -14,10 +14,9 @@ import SEO from "../components/SEO";
 import ProcessTimeline from "../components/ProcessTimeline";
 import ReviewsCarousel from "../components/ReviewsCarousel";
 import Footer from "../layouts/Footer";
-import { Project } from "../types";
 import { Link } from "react-router-dom";
-import { projects } from "../utils/utils";
-
+import { processSteps, projects, reviews } from "../utils/utils";
+import solarHomePhoto from '../assets/solar-home-photo.jpeg';
 const Home = () => {
   const whySolarPoints = [
     {
@@ -48,47 +47,6 @@ const Home = () => {
     },
   ];
 
-  const processSteps = [
-    { title: "Free Quote", text: "Get customized solar plan" },
-    { title: "Expert Consultation", text: "Site visit & system design" },
-    { title: "Choose System", text: "Select perfect package" },
-    { title: "Install & Save", text: "Quick installation & savings" },
-  ];
-
-  const reviews = [
-    {
-      name: "Rahul Sharma",
-      location: "Meerut U.P",
-      text: "Leela Energy made our transition to solar seamless. Our energy bills have dropped by 80% and the installation team was professional.",
-    },
-    {
-      name: "Priya Patel",
-      location: "Ghaziabad U.P",
-      text: "Excellent service from start to finish. The financing options made it affordable, and we're already seeing significant savings.",
-    },
-    {
-      name: "Anil Kumar",
-      location: "Lucknow U.P",
-      text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
-    },
-    {
-      name: "Gaurav Kumar",
-      location: "Delhi",
-      text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
-    },
-    {
-      name: "Rajan Kumar",
-      location: "Delhi",
-      text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
-    },
-    {
-      name: "Gaurav Kashyap",
-      location: "Kanput U.P",
-      text: "Impressed with the quality of installation and post-sales support. Highly recommend Leela Energy Solutions!",
-    },
-  ];
-
-
 
   return (
     <div className="bg-gray-50">
@@ -102,9 +60,9 @@ const Home = () => {
         className="relative"
         style={{
           backgroundImage: `
-      linear-gradient(180deg, rgba(25, 75, 50, 0.8) 0%, rgba(15, 55, 35, 0.6) 100%),
-      url('https://assets.website-files.com/61cf32048e30b774421bffa5/61cf32048e30b7e00e1bffb1_bg-header-min%25402x-p-2000.jpeg')
-    `,
+    linear-gradient(180deg, rgba(25, 75, 50, 0.8) 0%, rgba(15, 55, 35, 0.6) 100%),
+    url(${solarHomePhoto})
+  `,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -170,7 +128,8 @@ const Home = () => {
             {projects.slice(0, 3).map((project) => ( // Show only first 3 projects
               <motion.div
                 key={project.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                whileHover={{ y: -10 }}
+                className="bg-white border border-green-100 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img

@@ -17,10 +17,11 @@ const ProjectsPage = () => {
                         {projects.map((project) => (
                             <motion.div
                                 key={project.id}
+                                whileHover={{ y: -10 }}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
-                                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                                className="bg-white border border-green-100 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                             >
                                 <div className="relative h-48 overflow-hidden">
                                     <img
