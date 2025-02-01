@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Leela Energy Solutions</h3>
           <p className="text-gray-400">
-            Your trusted solar energy partner since 2020
+            Your trusted solar energy partner since 2023
           </p>
         </div>
         <div>
@@ -24,8 +24,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#financing" className="hover:text-green-500">
-                Financing
+              <a href="/projects" className="hover:text-green-500">
+                All Projects
               </a>
             </li>
           </ul>
