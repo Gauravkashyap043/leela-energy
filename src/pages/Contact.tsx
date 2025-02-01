@@ -147,7 +147,7 @@ const Contact = () => {
                 <textarea
                   id="address"
                   name="address"
-                  rows="3"
+                  rows={3}
                   placeholder="Enter your full address"
                   className={`w-full p-3 border rounded-lg ${formik.touched.address && formik.errors.address
                     ? 'border-red-500'
@@ -193,7 +193,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  rows="4"
+                  rows={4}
                   placeholder="How can we help you?"
                   className={`w-full p-3 border rounded-lg ${formik.touched.message && formik.errors.message
                     ? 'border-red-500'
